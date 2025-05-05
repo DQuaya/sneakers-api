@@ -4,20 +4,15 @@ const app = express();
 app.use(express.json());
 
 const Jordan = [
-    { id: 1, type: 'Jordan Retro 1 High', name: 'Reimagined Royal', image:''},
-    { id: 2, type: 'Jordan Retro 4', name: 'University Red', image:''},
-    { id: 3, type: 'Jordan Retro 1 High', name: 'Pine Green', image:''},
-    { id: 4, type: 'Jordan Retro 3', name: 'University Red', image:''},
-    { id: 5, type: 'Jordan Retro 12', name: 'Pine Green', image:''},
-    { id: 6, type: 'Jordan Retro 4', name: 'University Red', image:''},
-    { id: 7, type: 'Jordan Retro 11', name: 'Pine Green', image:''},
-    { id: 8, type: 'Jordan Retro 11', name: 'University Red', image:''},
-    { id: 9, type: 'Jordan Retro 14', name: 'Pine Green', image:''},
-    { id: 10, type: 'Jordan Retro 3', name: 'University Red', image:''},
-    { id: 11, type: 'Jordan Retro 1 High', name: 'Pine Green', image:''},
-    { id: 12, type: 'Jordan Retro 5', name: 'University Red', image:''},
-    { id: 13, type: 'Jordan Retro 1 High', name: 'Pine Green', image:''},
-    { id: 14, type: 'Jordan Retro 13', name: 'University Red', image:''},
+    { id: 1, type: 'Travis Scott x Air Jordan 1 High', name: 'Purple', image:'https://cdn.sanity.io/images/pu5wtzfc/production/9f873b3b77bc6771c839fd568001c664a62efe2c-1200x750.jpg/concept-lab-travis-scott-x-air-jordan-1-high-purple.jpg?w=1200&h=750&auto=format', link: 'https://houseofheat.co/jordan/concept-lab-travis-scott-x-air-jordan-1-high-purple'},
+    { id: 2, type: 'Travis Scott x Air Jordan 1 High', name: 'Olive', image:'https://cdn.sanity.io/images/pu5wtzfc/production/e742937ed95215402a4abc994f82a4d52e4f6347-1200x750.jpg/concept-lab-travis-scott-x-air-jordan-1-high-olive.jpg?w=1200&h=750&auto=format', link:'https://houseofheat.co/jordan/concept-lab-travis-scott-x-air-jordan-1-high-olive'},
+    { id: 3, type: 'Travis Scott x Air Jordan 1 High', name: 'University Blue', image:'https://cdn.sanity.io/images/pu5wtzfc/production/3edb0dbcf8e67e6a848b5405c924af175d4f6c59-1200x750.jpg/concept-lab-travis-scott-x-air-jordan-1-high-university-blue.jpg?w=1200&h=750&auto=format', link:'https://houseofheat.co/jordan/concept-lab-travis-scott-x-air-jordan-1-high-university-blue'},
+    { id: 4, type: 'OFF-WHITE x Air Jordan 1 High', name: 'Alternate Colorways', image:'https://cdn.sanity.io/images/pu5wtzfc/production/d4cfb4b9389d3867150d967a801d999a135333e8-1200x750.jpg/concept-lab-off-white-x-air-jordan-1-high-alternate-colorways.jpg?w=1200&h=750&auto=format', link:'https://houseofheat.co/jordan/concept-lab-off-white-x-air-jordan-1-high-alternate-colorways'},
+    { id: 5, type: 'OFF-WHITE x Air Jordan 1 High', name: 'Neon', image:'https://cdn.sanity.io/images/pu5wtzfc/production/c74b89c1cdc77eb906a9db3d05c19c475bc34cc5-1200x826.jpg/OFF-WHITE-x-Air-Jordan-1-High-Neon.jpg?w=1200&h=826&auto=format', link:'https://houseofheat.co/jordan/concept-lab-off-white-x-air-jordan-1-high-alternate-colorways'},
+    { id: 6, type: 'OFF-WHITE x Air Jordan 1 High', name: 'Football Grey', image:'https://cdn.sanity.io/images/pu5wtzfc/production/0ba7472bf381f086a63a4ff10699ef4946a2e13e-1200x826.jpg/OFF-WHITE-x-Air-Jordan-1-High-Dolphins.jpg?w=1200&h=826&auto=format', link:'https://houseofheat.co/jordan/concept-lab-off-white-x-air-jordan-1-high-alternate-colorways'},
+    { id: 7, type: 'OFF-WHITE x Air Jordan 1 High', name: 'Crimson Tint', image:'https://cdn.sanity.io/images/pu5wtzfc/production/c6ccc4dce50dbe4ad2d7007192be4203fb4b47af-1200x826.jpg/OFF-WHITE-x-Air-Jordan-1-High-Football-Grey.jpg?w=1200&h=826&auto=format', link:'https://houseofheat.co/jordan/concept-lab-off-white-x-air-jordan-1-high-alternate-colorways'},
+    { id: 8, type: 'OFF-WHITE x Air Jordan 1 High', name: 'Spruce Green', image:'https://cdn.sanity.io/images/pu5wtzfc/production/f8421af101162b8cb25f4c905cbee660b12fd0bc-1200x826.jpg/OFF-WHITE-x-Air-Jordan-1-High-Crimson-Tint.jpg?w=1200&h=826&auto=format', link:'https://houseofheat.co/jordan/concept-lab-off-white-x-air-jordan-1-high-alternate-colorways'},
+    { id: 9, type: 'OFF-WHITE x Air Jordan 1 High', name: 'Blink', image:'https://cdn.sanity.io/images/pu5wtzfc/production/066d074d837cdb48db2690bb939c7ffec52c4f77-1200x826.jpg/OFF-WHITE-x-Air-Jordan-1-High-Blink.jpg?w=1200&h=826&auto=format', link:'https://houseofheat.co/jordan/concept-lab-off-white-x-air-jordan-1-high-alternate-colorways'},
   ];
   
 
