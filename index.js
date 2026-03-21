@@ -24,45 +24,45 @@ app.get('/jordan', (req, res) => {
   
   app.get('/jordan/:id', (req, res) => {
     const id = parseInt(req.params.id);
-    const shoe = Jordan.find((shoe) => shoe.id === id);
+    const release = Jordan.find((release) => release.id === id);
   
-    if (!shoe) {
-      res.status(404).json({ error: 'Shoe not found' });
+    if (!release) {
+      res.status(404).json({ error: 'release not found' });
     } else {
-      res.json(shoe);
+      res.json(release);
     }
   });
   
   app.post('/jordan', (req, res) => {
-    const newShoe = req.body;
-    if (!newShoe.id || !newShoe.name) {
+    const newrelease = req.body;
+    if (!newrelease.id || !newrelease.name) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
-    Jordan.push(newShoe);
-    res.status(201).json(newShoe);
+    Jordan.push(newrelease);
+    res.status(201).json(newrelease);
   });
   
   app.put('/jordan/:id', (req, res) => {
     const id = parseInt(req.params.id);
-    const updatedShoe = req.body;
+    const updatedrelease = req.body;
   
-    const shoeIndex = Jordan.findIndex((shoe) => shoe.id === id);
-    if (shoeIndex === -1) {
-      res.status(404).json({ error: 'Shoe not found' });
+    const releaseIndex = Jordan.findIndex((release) => release.id === id);
+    if (releaseIndex === -1) {
+      res.status(404).json({ error: 'release not found' });
     } else {
-      Jordan[shoeIndex] = updatedShoe;
-      res.json(updatedShoe);
+      Jordan[releaseIndex] = updatedrelease;
+      res.json(updatedrelease);
     }
   });
   
   app.delete('/jordan/:id', (req, res) => {
     const id = parseInt(req.params.id);
-    const shoeIndex = Jordan.findIndex((shoe) => shoe.id === id);
+    const releaseIndex = Jordan.findIndex((release) => release.id === id);
   
-    if (shoeIndex === -1) {
-      res.status(404).json({ error: 'Shoe not found' });
+    if (releaseIndex === -1) {
+      res.status(404).json({ error: 'release not found' });
     } else {
-      Jordan.splice(shoeIndex, 1);
+      Jordan.splice(releaseIndex, 1);
       res.status(204).send();
     }
   });
