@@ -17,6 +17,19 @@ const Jordan = [
     { id: 9, type: 'Air Jordan 1 High', name: 'UNC Toe', image:'https://cdn.sanity.io/images/pu5wtzfc/production/9e260d514cc81485d0081113c8bd53683d227a4c-1200x750.jpg/concept-lab-air-jordan-1-high-unc-toe.jpg?w=1200&h=750&auto=format', link:'https://houseofheat.co/jordan/concept-lab-air-jordan-1-high-unc-toe'},
   ];
   
+  
+const Upcoming = [
+    { id: 1, type: 'Air Jordan 1 Retro High OG', name: 'Flight CLub', image:'https://cdn.sanity.io/images/pu5wtzfc/production/9f873b3b77bc6771c839fd568001c664a62efe2c-1200x750.jpg/concept-lab-travis-scott-x-air-jordan-1-high-purple.jpg?w=1200&h=750&auto=format', date: 'April 11, 2026'},
+    { id: 2, type: 'Air Jordan 5', name: 'Metallic', image:'https://sneakernews.com/wp-content/uploads/2025/07/jordan-5-white-metallic-2000.jpg?w=1920', date:'April 25, 2026'},
+    { id: 3, type: 'Air Jordan 6', name: 'Cap And Gown', image:'https://sneakernews.com/wp-content/uploads/2026/03/air-jordan-6-cap-and-gown-2.jpg?w=1200', date:'April 30, 2026'},
+    { id: 4, type: 'Air Jordan 4', name: 'Toro', image:'https://sneakernews.com/wp-content/uploads/2026/01/air-jordan-4-toro-bravo-fq8138-600-1.jpg?w=1200', date:'May 2, 2026'},
+    { id: 5, type: 'Travis Scott X Air Jordan 1 Low', name: 'Pink Pack', image:'https://sneakernews.com/wp-content/uploads/2026/01/travis-scott-air-jordan-1-low-og-pink-IQ7604-100-5.jpg?w=1200', date:'May 22, 2026'},
+    { id: 6, type: 'Travis Scott X Air Jordan 1 Low', name: 'Pink Pack', image:'https://sneakernews.com/wp-content/uploads/2026/01/travis-scott-air-jordan-1-low-og-pink-IQ7604-101-2.jpg?w=1200', date:'May 22, 2026'},
+    { id: 7, type: 'Air Jordan 4', name: 'Tour Yellow', image:'https://sneakernews.com/wp-content/uploads/2026/02/air-jordan-1-retro-low-og-howard-ix8478-410.jpg?w=1200', date:'September 5, 2026'},
+    { id: 8, type: 'Air Jordan 1 Low', name: 'Howard', image:'https://sneakernews.com/wp-content/uploads/2026/02/air-jordan-1-retro-low-og-howard-ix8478-410.jpg?w=1200', date:'October 1, 2026'},
+    { id: 9, type: 'Air Jordan 1 High', name: 'Royal', image:'https://sneakernews.com/wp-content/uploads/2026/01/air-jordan-1-royal-2026-1.jpg?w=1200', date:'October 10, 2026'},
+    { id: 10, type: 'Air Jordan 4', name: 'Bred', image:'https://sneakernews.com/wp-content/uploads/2025/12/air-jordan-4-bred-FV5029-001-3.jpg?w=1200', date:'November 27, 2026'},
+  ];
 
 app.get('/jordan', (req, res) => {
     res.json(Jordan);
