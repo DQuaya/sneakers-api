@@ -16,7 +16,6 @@ const Upcoming = [
     { id: 8, type: 'Air Jordan 1 Low', name: 'Howard', image:'https://sneakernews.com/wp-content/uploads/2026/02/air-jordan-1-retro-low-og-howard-ix8478-410.jpg?w=1200', date:'October 1, 2026'},
     { id: 9, type: 'Air Jordan 1 High', name: 'Royal', image:'https://sneakernews.com/wp-content/uploads/2026/01/air-jordan-1-royal-2026-1.jpg?w=1200', date:'October 10, 2026'},
     { id: 10, type: 'Air Jordan 4', name: 'Bred', image:'https://sneakernews.com/wp-content/uploads/2025/12/air-jordan-4-bred-FV5029-001-3.jpg?w=1200', date:'November 27, 2026'},
-
   ];
   
 

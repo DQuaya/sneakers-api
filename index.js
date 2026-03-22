@@ -22,6 +22,9 @@ app.get('/jordan', (req, res) => {
     res.json(Jordan);
   });
   
+  app.get('/upcoming', (req, res) => {
+  res.json(Upcoming);
+});
   app.get('/jordan/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const shoe = Jordan.find((shoe) => shoe.id === id);
