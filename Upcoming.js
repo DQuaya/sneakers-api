@@ -26,45 +26,45 @@ app.get('/upcoming', (req, res) => {
   
   app.get('/upcoming/:id', (req, res) => {
     const id = parseInt(req.params.id);
-    const shoe = Upcoming.find((shoe) => shoe.id === id);
+    const release = Upcoming.find((release) => release.id === id);
   
-    if (!shoe) {
-      res.status(404).json({ error: 'Shoe not found' });
+    if (!release) {
+      res.status(404).json({ error: 'release not found' });
     } else {
-      res.json(shoe);
+      res.json(release);
     }
   });
   
   app.post('/upcoming', (req, res) => {
-    const newShoe = req.body;
-    if (!newShoe.id || !newShoe.name) {
+    const newrelease = req.body;
+    if (!newrelease.id || !newrelease.name) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
-    Upcoming.push(newShoe);
-    res.status(201).json(newShoe);
+    Upcoming.push(newrelease);
+    res.status(201).json(newrelease);
   });
   
   app.put('/upcoming/:id', (req, res) => {
     const id = parseInt(req.params.id);
-    const updatedShoe = req.body;
+    const updatedrelease = req.body;
   
-    const shoeIndex = Upcoming.findIndex((shoe) => shoe.id === id);
-    if (shoeIndex === -1) {
-      res.status(404).json({ error: 'Shoe not found' });
+    const releaseIndex = Upcoming.findIndex((release) => release.id === id);
+    if (releaseIndex === -1) {
+      res.status(404).json({ error: 'release not found' });
     } else {
-      Upcoming[shoeIndex] = updatedShoe;
-      res.json(updatedShoe);
+      Upcoming[releaseIndex] = updatedrelease;
+      res.json(updatedrelease);
     }
   });
   
   app.delete('/upcoming/:id', (req, res) => {
     const id = parseInt(req.params.id);
-    const shoeIndex = Upcoming.findIndex((shoe) => shoe.id === id);
+    const releaseIndex = Upcoming.findIndex((release) => release.id === id);
   
-    if (shoeIndex === -1) {
-      res.status(404).json({ error: 'Shoe not found' });
+    if (releaseIndex === -1) {
+      res.status(404).json({ error: 'release not found' });
     } else {
-      Upcoming.splice(shoeIndex, 1);
+      Upcoming.splice(releaseIndex, 1);
       res.status(204).send();
     }
   });

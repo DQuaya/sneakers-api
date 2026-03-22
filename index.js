@@ -24,45 +24,45 @@ app.get('/jordan', (req, res) => {
   
   app.get('/jordan/:id', (req, res) => {
     const id = parseInt(req.params.id);
-    const release = Jordan.find((release) => release.id === id);
+    const shoe = Jordan.find((shoe) => shoe.id === id);
   
-    if (!release) {
-      res.status(404).json({ error: 'release not found' });
+    if (!shoe) {
+      res.status(404).json({ error: 'Shoe not found' });
     } else {
-      res.json(release);
+      res.json(shoe);
     }
   });
   
   app.post('/jordan', (req, res) => {
-    const newrelease = req.body;
-    if (!newrelease.id || !newrelease.name) {
+    const newShoe = req.body;
+    if (!newShoe.id || !newShoe.name) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
-    Jordan.push(newrelease);
-    res.status(201).json(newrelease);
+    Jordan.push(newShoe);
+    res.status(201).json(newShoe);
   });
   
   app.put('/jordan/:id', (req, res) => {
     const id = parseInt(req.params.id);
-    const updatedrelease = req.body;
+    const updatedShoe = req.body;
   
-    const releaseIndex = Jordan.findIndex((release) => release.id === id);
-    if (releaseIndex === -1) {
-      res.status(404).json({ error: 'release not found' });
+    const shoeIndex = Jordan.findIndex((shoe) => shoe.id === id);
+    if (shoeIndex === -1) {
+      res.status(404).json({ error: 'Shoe not found' });
     } else {
-      Jordan[releaseIndex] = updatedrelease;
-      res.json(updatedrelease);
+      Jordan[shoeIndex] = updatedShoe;
+      res.json(updatedShoe);
     }
   });
   
   app.delete('/jordan/:id', (req, res) => {
     const id = parseInt(req.params.id);
-    const releaseIndex = Jordan.findIndex((release) => release.id === id);
+    const shoeIndex = Jordan.findIndex((shoe) => shoe.id === id);
   
-    if (releaseIndex === -1) {
-      res.status(404).json({ error: 'release not found' });
+    if (shoeIndex === -1) {
+      res.status(404).json({ error: 'Shoe not found' });
     } else {
-      Jordan.splice(releaseIndex, 1);
+      Jordan.splice(shoeIndex, 1);
       res.status(204).send();
     }
   });
