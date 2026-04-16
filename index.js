@@ -19,7 +19,7 @@ const Jordan = [
   
   
 const Upcoming = [
-    { id: 1, type: 'Air Jordan 1 Retro High OG', name: 'Flight Club', image:'https://cdn.sanity.io/images/pu5wtzfc/production/9f873b3b77bc6771c839fd568001c664a62efe2c-1200x750.jpg/concept-lab-travis-scott-x-air-jordan-1-high-purple.jpg?w=1200&h=750&auto=format', date: 'April 11, 2026'},
+    { id: 1, type: 'Air Jordan 1 Retro High OG', name: 'Wings', image:'https://sneakernews.com/wp-content/uploads/2024/09/air-jordan-1-wings-phantom-wolf-grey-DZ3139-002-9.jpg?w=1200', date: 'June 11, 2026'},
     { id: 2, type: 'Air Jordan 5', name: 'Metallic', image:'https://sneakernews.com/wp-content/uploads/2025/07/jordan-5-white-metallic-2000.jpg?w=1920', date:'April 25, 2026'},
     { id: 3, type: 'Air Jordan 6', name: 'Cap And Gown', image:'https://sneakernews.com/wp-content/uploads/2026/03/cap-and-gown-jordan-6-5.jpg?w=1200', date:'April 30, 2026'},
     { id: 4, type: 'Air Jordan 4', name: 'Toro', image:'https://sneakernews.com/wp-content/uploads/2026/01/air-jordan-4-toro-bravo-fq8138-600-1.jpg?w=1200', date:'May 2, 2026'},
